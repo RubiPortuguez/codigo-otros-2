@@ -20,6 +20,8 @@
 
     Nacionalidad
     <select name="nationality" id="nationality">
+      <!-- Se agrega línea para evitar tener una nacionalidad por default -->
+      <option value="" selected disabled> Selecciona una nacionalidad</option>
       <option value="ar">Argentina</option>
       <option value="mx">Mexicana</option>
       <option value="per">Peruana</option>
@@ -29,12 +31,14 @@
     <input type="submit">
   </form>
 
-  <div>
-    <h2>Lista de invitados</h2>
+  <!-- Se agrega id lista de invitados  -->
+  <div id="lista-de-invitados">
+    <h2 id="titulo-invitados">Lista de invitados</h2>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <!-- Se corrige ruta a script -->
+  <script src="./formulario.js"></script>
 </body>
 
 </html>
